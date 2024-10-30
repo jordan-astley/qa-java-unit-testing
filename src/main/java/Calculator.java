@@ -10,8 +10,10 @@ public class Calculator {
     public double divide(double x, double y) {
         if (y != 0) {
             return x / y;
-        } else {
+        } else if (x > 0){
             return Double.POSITIVE_INFINITY;
+        } else {
+            return Double.NEGATIVE_INFINITY;
         }
     }
 
