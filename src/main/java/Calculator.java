@@ -7,11 +7,11 @@ public class Calculator {
 
     public int multiply(int x, int y) {return x * y;}
 
-    public int divide(int x, int y) {
-        if (y == 0) {
-            return null;
-        } else {
+    public double divide(double x, double y) {
+        if (y != 0) {
             return x / y;
+        } else {
+            return Double.POSITIVE_INFINITY;
         }
     }
 
